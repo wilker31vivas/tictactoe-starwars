@@ -1,0 +1,29 @@
+/*--Alert--*/
+.notify {
+    font-family: sans-serif ; 
+  position:absolute;
+  top:0px;
+  width:100%;
+  height:0;  
+  box-sizing:border-box;
+  color:white;  
+  text-align:center;
+  background:rgba(250,250,250,.2);
+  overflow:hidden;
+  box-sizing:border-box;
+  transition:height .2s;
+  font-size: 2rem;
+}
+
+#notifyType:before{
+  display:block;
+  margin-top:15px; 
+  
+}
+
+.active{  
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Star Wars</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style-modal.css">
+    <link rel="stylesheet" href="style/style-form.css">
+    <link rel="stylesheet" href="style/style-alert.css">
+    <link rel="stylesheet" href="style/style-game.css">
+    <link rel="shortcut icon" href="img/images (1).png" type="image/x-icon">
+
+    <style type="text/css" id="operaUserStyle"></style>
+    <link href="https://fonts.cdnfonts.com/css/star-wars" rel="stylesheet">
+</head>
+<body>
+    <div class="container-title">
+        <h1 class="title">tic tac toe</h1>
+        <h1 class="title"><span class="starwars-title">star wars</span></h1>
+    </div>
+
+    <form class="container-form">
+        <label class="label-1" for="user1-select">Choose a character (User 1):</label>
+        <select class="container-form__select" id="user1-select" title="select an option" required>
+            <option selected class="option-1">Choose...</option>
+            <option value="Darth-Vader.png">Darth Vader</option>
+            <option value="Boba-Fett.png">Boba Fett</option>
+            <option value="C3PO.png">C3P0</option>
+            <option value="Lightsaber-Green.png">LightSaber-green</option>
+            <option value="Lightsaber-Red.png">LightSaber-red</option>
+            <option value="Millennium-Falcon.png">Millennium-Falcon</option>
+            <option value="R2D2.png">R2D2</option>
+            <option value="Stormtrooper.png">Stormtrooper</option>
+        </select>
+
+        <label class="label-2" for="user2-select">Choose a character (User 2):</label>
+        <select class="container-form__select" id="user2-select" title="select an option" required>
+            <option selected class="option-2">Choose...</option>
+            <option value="Darth-Vader.png">Darth Vader</option>
+            <option value="Boba-Fett.png">Boba Fett</option>
+            <option value="C3PO.png">C3P0</option>
+            <option value="Lightsaber-Green.png">LightSaber-green</option>
+            <option value="Lightsaber-Red.png">LightSaber-red</option>
+            <option value="Millennium-Falcon.png">Millennium-Falcon</option>
+            <option value="R2D2.png">R2D2</option>
+            <option value="Stormtrooper.png">Stormtrooper</option>
+          </select>
+    </form>
+
+    <button class="btn" id="start">Start</button>
+
+    <h1 class="turn-title">It's player 1's turn</h1>
+    <div class="container">
+        <div class="box" id="0"></div>
+        <div class="box" id="1"></div>
+        <div class="box" id="2"></div>
+        <div class="box" id="3"></div>
+        <div class="box" id="4"></div>
+        <div class="box" id="5"></div>
+        <div class="box" id="6"></div>
+        <div class="box" id="7"></div>
+        <div class="box" id="8"></div>
+    </div>
+    <button class="btn" id="restart">Restart</button>
+    <div id="win" class="modal">
+        <div class="modal-content animate" action="/action_page.php">
+            <div class="container-modal">
+                <h1 class="container-modal__title"></h1>
+                <button class="container-modal__button"><a href="#">Play again</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="notify"><span id="notifyType" class="">Oh no! You have to choose a character</span></div>
+    <div class="container-flags">
+        <button class="button-flag button-spain"><img src="icon-flags/spain.png" alt=""></button>
+        <button class="button-flag button-brazil"><img src="icon-flags/brazil-.png" alt=""></button>
+        <button class="button-flag button-usa"><img src="icon-flags/united-states.png" alt=""></button>
+    </div>
+    <p class="copyright">Made by <a href="https://www.instagram.com/wilker31vivas/" target="_blank" class="copyright-a">Wilker</a></p>
+    <div id="win" class="modal">
+        <div class="modal-content animate" action="/action_page.php">
+            <div class="container-modal">
+                <h1 class="container-modal__title"></h1>
+                <button class="container-modal__button"><a href="#">Volver a jugar</a></button>
+            </div>
+        </div>
+    </div>
+
+<script src="script/script.js"></script>
+</body>
+</html>
